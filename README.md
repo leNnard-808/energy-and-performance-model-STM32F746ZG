@@ -6,11 +6,12 @@ For further and more detailed instructions, please refer to the thesis itself.
 
 
 ## Performance (ms) model for the Nucleo-144 STM32F746ZG board at 70MHz:
-![equation](https://latex.codecogs.com/gif.latex?\mathrm{performance}&space;=&space;(-164.33&space;&plus;&space;0.0049x_1&plus;&space;89.83x_2&space;&plus;&space;0.043x_3&space;-&space;43.30x_4&space;&plus;&space;0.0046x_5))
+
+$$\mathrm{performance} = (-164.33 + 0.0049x_1+ 89.83x_2 + 0.043x_3 - 43.30x_4 + 0.0046x_5)$$
 
 
 ## Energy (mWs) model for the Nucleo-144 STM32F746ZG board at 70MHz:
-![equation](https://latex.codecogs.com/gif.latex?\mathrm{performance}&space;=&space;(-164.33&space;&plus;&space;0.0049x_1&plus;&space;89.83x_2&space;&plus;&space;0.043x_3&space;-&space;43.30x_4&space;&plus;&space;0.0046x_5)&space;\cdot&space;0.7W)
+$$\mathrm{energy} = (-164.33 + 0.0049x_1+ 89.83x_2 + 0.043x_3 - 43.30x_4 + 0.0046x_5) \cdot 0.7W$$
 
 The variable $x_1$ represents the sum of convolutional layer MACs, $x_2$ the number of convolutional layers, $x_3$ the sum of maxpooling layer MACs, $x_4$ the amount of maxpooling layers, and $x_5$ the MACs of the fully-connected layer.
 
