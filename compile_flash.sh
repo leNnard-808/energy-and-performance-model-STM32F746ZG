@@ -12,5 +12,3 @@ st-flash --connect-under-reset write bin_file.bin 0x08000000
 
 st-flash reset -v /dev/ttyACM0
 
-#sudo minicom -D /dev/ttyACM0 -b 115200 -C log.txt
-
